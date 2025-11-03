@@ -68,3 +68,57 @@ When updating Node via Brew you may need to link the correct node version. You m
 
 `npm install @salesforce/cli --global` updates/installs latest Salesforce CLI version. 
 
+# Recommended Settings 
+
+- Setup VPN and show in control centre settings
+- Use Hot Corners to quickly start screensaver or lock screen
+- Enable keyboard to show Emojis on clicking Fn
+- Clone Repository 
+- Authenticate Orgs 
+- Setup VS Code Action Buttons 
+- Authenticate in Microsoft Office 365
+
+## VS Code Action Buttons
+
+```json
+"actionButtons": {
+    "loadNpmCommands": false,
+    "commands": [
+        {
+            "name": "$(browser) Dev",
+            "tooltip": "Open Dev Sandbox",
+            "command": "sf org open -o Dev && exit",
+            "singleInstance": true,
+            "color": "#31b033"
+        },
+        {
+            "name": "$(browser) Sta",
+            "tooltip": "Open Staging Org",
+            "command": "sf org open -o Staging && exit",
+            "singleInstance": true,
+            "color": "orange"
+        },
+        {
+            "name": "$(browser) Prod",
+            "tooltip": "Open Production Org",
+            "command": "sf org open -o Production && exit",
+            "singleInstance": true,
+            "color": "#eb3434"
+        },
+        {
+            "name": "$(list-selection) Orgs",
+            "tooltip": "List all authenticated devhubs, sandboxes and scratch orgs",
+            "command": "sf org list",
+            "singleInstance": true,
+            "color": "white"
+        },
+        {
+            "name": "$(arrow-down) Tags",
+            "tooltip": "Fetch git tags",
+            "command": "git fetch --tags --force && exit",
+            "singleInstance": true,
+            "color": "#31b033"
+        }
+    ]
+},
+```
