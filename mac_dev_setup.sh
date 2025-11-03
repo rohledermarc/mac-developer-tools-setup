@@ -48,3 +48,6 @@ brew install --cask deepl
 brew install --cask firefox
 brew install --cask google-chrome
 brew install --cask microsoft-office-businesspro
+brew install --cask macpass
+brew install --cask slack
+brew install --cask obsidian
