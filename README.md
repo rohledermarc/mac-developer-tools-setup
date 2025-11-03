@@ -10,6 +10,18 @@ To get started, open your standard Terminal (Command + Space -> "Terminal"). Che
 bash mac_dev_setup.sh
 ```
 
+
+# Java Symlink
+
+When brew installs openjdk it is not automatically linked to the java cli command. Create a symlink to make it work: 
+
+`brew info openjdk` will tell you how to create the symlink. 
+
+`sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk` for mac os intel chips. 
+
+`sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk` for mac os apple silicon chips.
+
+
 # Update & Check Tooling
 
 ## Brew & Node

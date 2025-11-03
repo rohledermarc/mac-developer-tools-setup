@@ -11,9 +11,13 @@ git config --global user.email your.name@company.com
 
 # core apps
 brew install zsh
-brew install node
+brew install node@24
 brew install openjdk
+brew install python
 npm install @salesforce/cli --global
+sf plugins install code-analyzer
+sf plugins install packaging
+sf plugins install dev
 brew install --cask docker
 brew install --cask postman
 
@@ -43,3 +47,4 @@ code --install-extension peterweinberg.apexdox-vs-code # ApexDox VS Code
 brew install --cask deepl
 brew install --cask firefox
 brew install --cask google-chrome
+brew install --cask microsoft-office-businesspro
