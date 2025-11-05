@@ -14,6 +14,7 @@ brew install zsh
 brew install node@24
 brew install openjdk
 brew install python
+brew install maven
 npm install @salesforce/cli --global
 sf plugins install code-analyzer
 sf plugins install packaging
@@ -42,6 +43,7 @@ code --install-extension ms-azuretools.vscode-containers # docker container tool
 code --install-extension dbaeumer.vscode-eslint # eslint 
 code --install-extension gitlab.gitlab-workflow # gitlab integration 
 code --install-extension peterweinberg.apexdox-vs-code # ApexDox VS Code
+code --install-extension vscjava.vscode-java-pack # Java extension pack
 
 # convenience apps
 brew install --cask deepl
